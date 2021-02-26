@@ -1,8 +1,8 @@
 ---
 title: 'Welcome Bee starter'
 date: 2020-07-04 12:21:13
-category: 'development'
-draft: false
+category: 'ref'
+draft: true
 ---
 
 ![](./images/hello.png)
@@ -31,7 +31,7 @@ draft: false
 2. Support highlighting with [prism](https://github.com/PrismJS/prism)
    2-1. Use inline highlighting
 
-```js{3}
+```js{3, 6-10}
 import React from 'react'
 
 const TEMPLATE = 'gatsby-starter-bee'
