@@ -7,6 +7,25 @@
     "node_modules": true,
     "public": true,
     "static": true,
-    ".gitignore": true
+    ".gitignore": true,
+    ".github": true,
+    ".cache": true,
+    "assets": true,
+    "src": true,
+    ".eslintrc.js": true,
+    ".markdownlint.json": true,
+    ".prettierrc": true,
+    "CONTRIBUTING.md": true,
+    "gatsby-browser.js": true,
+    "gatsby-config.js": true,
+    "gatsby-meta-config.js": true,
+    "gatsby-node.js": true,
+    "LICENSE": true,
+    "package-lock.json": true,
+    "package.json": true,
+    "README.md": true,
+    "SECURITY.md": true,
+    "content\\assets": true,
+    ".vscode": true
   }
 }
