@@ -67,11 +67,19 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: metaConfig.ga,
+    //     head: true,
+    //     anonymize: true,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        trackingId: metaConfig.ga,
-        head: true,
+        trackingId: `G-TPKMPB9RE7`, // 측정 ID
+        head: false, // head에 tracking script를 넣고 싶다면 true로 변경
         anonymize: true,
       },
     },
