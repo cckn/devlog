@@ -1,7 +1,7 @@
 ---
 title: VS Code | Prettier를 이용한 자동 포매팅
 date: 2021-03-09 14:03:80
-category: Tools
+category: tools
 thumbnail: { thumbnailSrc }
 draft: false
 ---
