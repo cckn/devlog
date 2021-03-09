@@ -1,5 +1,5 @@
 ---
-title: VS Code - 기본 터미널 경로 변경하는 방법
+title: VS Code | 기본 터미널 경로 변경하는 방법
 date: 2021-03-09 13:03:28
 category: Tools
 thumbnail: { thumbnailSrc }
