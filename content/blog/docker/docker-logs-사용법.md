@@ -6,7 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-![귀여운 고래를 드리겠읍니다. 1](images/2021-03-08/b162f2edf7a66b63f2c31d4f67af9def00d99e7ff92787567473ff1af13f333c.png)
+![picture 19](images/2021-03-09/b72fe64431b232e6647d76711efc9226be010a32f35898679ab5fc6e19666ed4.png)
 
 # 개요
 
