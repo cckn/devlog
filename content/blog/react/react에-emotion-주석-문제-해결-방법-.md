@@ -10,7 +10,7 @@ draft: false
 
 emotion을 사용하면 파일 최상단에 `/** @jsx jsx */` 라는 주석을 추가해주어야 하는데
 
-![picture 15](2021-02-26/d75cedc39ef0cacd1f6b3e8321bbc1d4277d7f25b966164bfdd5b3aa9ec53df3.png)
+![picture 16](images/2021-03-09/7a696304e4d9c334b226eceb5550e657976bdf5d4a94adcf0ab086a042424f3d.png)
 
 ```js
 ./src/components/TodoTemplate.jsx
@@ -30,7 +30,7 @@ SyntaxError: C:\dev\begin-react\src\components\TodoTemplate.jsx: pragma and prag
 
 공식 홈페이지의 문서를 참조해보면 `/** @jsx jsx */*`가 동작하지 않는 경우 _`/_@jsxImportSource @emotion/react \*/` 를 대신 사용하라고 한다.
 
-![picture 16](2021-02-26/410dfb3118d0b9d33d156abc41a1d3b8098d35f4df0c401f00f867b311ef99c8.png)
+![picture 16](images/2021-02-26/410dfb3118d0b9d33d156abc41a1d3b8098d35f4df0c401f00f867b311ef99c8.png)
 
 ```jsx
 /** @jsxImportSource @emotion/react */
