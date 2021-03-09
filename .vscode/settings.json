@@ -18,7 +18,6 @@
     "CONTRIBUTING.md": true,
     "gatsby-browser.js": true,
     "gatsby-config.js": true,
-    "gatsby-meta-config.js": true,
     "gatsby-node.js": true,
     "LICENSE": true,
     "package-lock.json": true,
