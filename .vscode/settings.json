@@ -23,7 +23,6 @@
     "package.json": true,
     "README.md": true,
     "SECURITY.md": true,
-    "content\\assets": true,
     ".vscode": true
   }
 }

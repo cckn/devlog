@@ -1,5 +1,5 @@
 ---
-title: React에 Emotion 주석 문제 해결 방법
+title: React - Emotion 주석 문제 해결 방법
 date: 2021-02-26 14:02:74
 category: react
 thumbnail: { thumbnailSrc }
@@ -24,7 +24,7 @@ SyntaxError: C:\dev\begin-react\src\components\TodoTemplate.jsx: pragma and prag
 
 최신 cra로 생성한 프로젝트의 경우 위와 같은 에러를 뱉으며 문제가 발생한다.
 
-그렇다고 저 주석을 삭제하면 Emotion이 정상동작하지 않는 상황
+그렇다고 저 주석을 삭제하면 `Emotion`이 정상동작하지 않는 상황
 
 ## 해결 방법
 
