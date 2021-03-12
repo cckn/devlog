@@ -1,7 +1,7 @@
 ---
 title: Kibana Dark Theme 설정 방법
 date: 2020-12-03 20:03:95
-category: data
+category: devops
 thumbnail: { thumbnailSrc }
 draft: false
 ---
