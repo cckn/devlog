@@ -1,5 +1,5 @@
 ---
-title: (JS) 프로그래머스 - 모두-0으로-만들기
+title: (JS) 프로그래머스 - 모두 0으로 만들기
 date: 2021-04-18 03:04:99
 category: problem-solve
 thumbnail: { thumbnailSrc }
