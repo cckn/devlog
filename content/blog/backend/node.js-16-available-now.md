@@ -59,7 +59,7 @@ async function run() {
 run()
 ```
 
-Node.js v15.0.0에 [James Snell](https://github.com/nodejs/node/pull/33950)이 추가했으며, 이 릴리즈에서는 실험적인 상태에서 안정적 상태로 졸업했습니다.
+Node.js v15.0.0에 [James Snell](https://github.com/nodejs/node/pull/33950)이 추가했으며, 이 릴리즈에서는 실험적인 상태에서 안정적 상태로 변경됐습니다.
 
 ## Other recent features
 
