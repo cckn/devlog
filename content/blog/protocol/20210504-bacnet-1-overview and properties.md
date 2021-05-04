@@ -59,6 +59,7 @@ BACnet 표준은 모든 BACnet 장치의 모든 개체를 요구하지 않습니
 VAV 상자를 제어하는 ​​장치에는 여러 아날로그 입력 및 아날로그 출력 개체가 있을 수 있지만 센서 입력이나 제어 출력이없는 Windows® 워크 스테이션은 그렇지 않습니다.
 모든 BACnet 장치에는 네트워크에 대한 BACnet 장치를 완전히 설명하는 속성 인 장치 개체가 있어야 합니다.
 예를 들어 장치 개체의 Object_List 속성은 BACnet 장치에 포함된 모든 개체의 목록을 제공합니다.
+
 `Vendor_Name`, `Vendor_Identifier` 및 `Model_Name` 속성은 장치의 제조업체 이름과 모델을 제공합니다.
 또한 BACnet을 통해 제조업체는 다른 제조업체의 장비에서 액세스하거나 이해할 수 없는 독점 개체를 제공 할 수 있습니다.
 그러나 표준 BACnet 개체를 방해하지 않습니다.
@@ -101,46 +102,46 @@ Analog Input Object(아날로그 입력 개체)는 제어 요소와 직접 관�
 
 표 2에는 각 속성에 대한 일반 또는 예제 값과 함께 정의된 아날로그 입력 개체의 속성이 나열되어 있습니다.
 
-예를 들어, Status_Flags, Event_State, Reliability, Out_Of_Service, Min_Pres_Value, Max_Pres_Value, Notification_Class, High_Limit, Low_Limit, Limit_Enable, Event_Enable, Acked_Transitions및 Notify_Type 특성은 모두 센서에서 비정상적이고 가능한 위험한 조건을 탐지하고 응답으로 적절한 알림 또는 알람을 생성하는 것을 다룹니다.
+예를 들어, `Status_Flags`, `Event_State`, `Reliability`, `Out_Of_Service`, `Min_Pres_Value`, `Max_Pres_Value`, `Notification_Class`, `High_Limit`, `Low_Limit`, `Limit_Enable`, `Event_Enable`, `Acked_Transitions` 및 `Notify_Type` 특성은 모두 센서에서 비정상적이고 가능한 위험한 조건을 탐지하고 응답으로 적절한 알림 또는 알람을 생성하는 것을 다룹니다.
 
 **Table 2. 아날로그 입력 개체의 속성.**
 
-| PROPERTY            | BACnet   | EXAMPLE                                                     |
-| ------------------- | -------- | ----------------------------------------------------------- |
-| `Object_Identifier` | Required | Analog Input #1                                             |
-| `Object_Name`       | Required | "AI 01"                                                     |
-| `Object_Type`       | Required | Analog Input                                                |
-| Present_Value       | Required | 68.0                                                        |
-| Description         | Optional | "Outside Air Temperature"                                   |
-| Device_Type         | Optional | "10k Thermistor"                                            |
-| Status_Flags        | Required | In_Alarm, Fault, Overridden, Out_Of_Service flags           |
-| Event_State         | Required | Normal(및 다양한 문제 보고 상태)                            |
-| Reliability         | Optional | No_Fault_Detected(다양한 고장 조건 포함)                    |
-| Out_Of_Service      | Required | False                                                       |
-| Update_Interval     | Optional | 1.00 (seconds)                                              |
-| Units               | Required | Degrees-Fahrenheit                                          |
-| Min_Pres_Value      | Optional | -100.0, minimum reliably read value                         |
-| Max_Pres_Value      | Optional | +300.0, maximum reliably read value                         |
-| Resolution          | Optional | 0.1                                                         |
-| COV_Increment       | Optional | Present_Value가 증분별로 변경되는 경우 알림: 0.5            |
-| Time_Delay          | Optional | 범위를 벗어나는 것을 감지하기 전에 대기할 시간(초): 5       |
-| Notification_Class  | Optional | 알림 클래스 개체로 COV 알림 보내기: 2                       |
-| High_Limit          | Optional | +215.0, Upper normal range                                  |
-| Low_Limit           | Optional | -45.0, Lower normal range                                   |
-| Deadband            | Optional | 0.1                                                         |
-| Limit_Enable        | Optional | 상한 보고, 하한 보고를 사용합니다.                          |
-| Event_Enable        | Optional | To_Offnormal, To_Fault, To_Normal 변경 보고를 활성화합니다. |
-| Acked_Transitions   | Optional | 위의 변경 사항에 대해 수신 된 승인을 나타내는 플래그입니다. |
-| Notify_Type         | Optional | 이벤트 또는 경보                                            |
+| PROPERTY             | BACnet   | EXAMPLE                                                     |
+| -------------------- | -------- | ----------------------------------------------------------- |
+| `Object_Identifier`  | Required | Analog Input #1                                             |
+| `Object_Name`        | Required | "AI 01"                                                     |
+| `Object_Type`        | Required | Analog Input                                                |
+| `Present_Value`      | Required | 68.0                                                        |
+| `Description`        | Optional | "Outside Air Temperature"                                   |
+| `Device_Type`        | Optional | "10k Thermistor"                                            |
+| `Status_Flags`       | Required | In_Alarm, Fault, Overridden, Out_Of_Service flags           |
+| `Event_State`        | Required | Normal(및 다양한 문제 보고 상태)                            |
+| `Reliability`        | Optional | No_Fault_Detected(다양한 고장 조건 포함)                    |
+| `Out_Of_Service`     | Required | False                                                       |
+| `Update_Interval`    | Optional | 1.00 (seconds)                                              |
+| `Units`              | Required | Degrees-Fahrenheit                                          |
+| `Min_Pres_Value`     | Optional | -100.0, minimum reliably read value                         |
+| `Max_Pres_Value`     | Optional | +300.0, maximum reliably read value                         |
+| `Resolution`         | Optional | 0.1                                                         |
+| `COV_Increment`      | Optional | Present_Value가 증분별로 변경되는 경우 알림: 0.5            |
+| `Time_Delay`         | Optional | 범위를 벗어나는 것을 감지하기 전에 대기할 시간(초): 5       |
+| `Notification_Class` | Optional | 알림 클래스 개체로 COV 알림 보내기: 2                       |
+| `High_Limit`         | Optional | +215.0, Upper normal range                                  |
+| `Low_Limit`          | Optional | -45.0, Lower normal range                                   |
+| `Deadband`           | Optional | 0.1                                                         |
+| `Limit_Enable`       | Optional | 상한 보고, 하한 보고를 사용합니다.                          |
+| `Event_Enable`       | Optional | To_Offnormal, To_Fault, To_Normal 변경 보고를 활성화합니다. |
+| `Acked_Transitions`  | Optional | 위의 변경 사항에 대해 수신 된 승인을 나타내는 플래그입니다. |
+| `Notify_Type`        | Optional | 이벤트 또는 경보                                            |
 
 나열된 처음 세 개의 속성 (`Object_Identifier`, `Object_Name` 및 `Object_Type`)은 BACnet 장치의 모든 개체에 있어야 합니다.
 
-### `Object_Identifier`
+### Object_Identifier
 
 `Object_Identifier`는 BACnet 장치 내에서 개체를 고유하게 식별하는 개체 유형 (`Object_Type` 속성으로도 식별됨)과 "인스턴스" 번호를 식별하는 32비트 코드입니다.
 이론적으로 BACnet 장치에는 특정 유형의 개체가 400만 개 이상 있을 수 있습니다.
 
-### `Object_Name`
+### Object_Name
 
 `Object_Name`은 고유한 기능을 가진 텍스트 문자열입니다.
 BACnet 장치는 특정 `Object_Name`을 가진 객체를 포함하는 장치에 대한 쿼리를 브로드 캐스트 할 수 있습니다.
@@ -162,37 +163,37 @@ BACnet은 모든 BACnet 장치에 하나의 장치 개체가 있어야 합니다
 
 **표 3. 장치 개체의 속성.**
 
-| PROPERTY                           | BACnet   | EXAMPLE                                          |
-| ---------------------------------- | -------- | ------------------------------------------------ |
-| `Object_Identifier`                | Required | Device #1076                                     |
-| `Object_Name`                      | Required | "Office 36 DD Control"                           |
-| `Object_Type`                      | Required | Device                                           |
-| System_Status                      | Required | Operational (plus others)                        |
-| Vendor_Name                        | Required | "Alerton Technologies, Inc."                     |
-| Vendor_Identifier                  | Required | Alerton                                          |
-| Model_Name                         | Required | "VAV-DD Controller"                              |
-| Firmware_Revision                  | Required | "1.0"                                            |
-| Application_Software_Version       | Required | "Dual-Duct DDC"                                  |
-| Location                           | Optional | "Office 36, Floor 3"                             |
-| Description                        | Optional | "(on network 5)"                                 |
-| Protocol_Version                   | Required | 1 (BACnet protocol version)                      |
-| Protocol_Conformance_Class         | Required | 2                                                |
-| Protocol_Services_Supported        | Required | readProperty, writeProperty, atomicWriteFile,... |
-| Protocol\_`Object_Type`s_Supported | Required | Analog Input, Analog Output,...                  |
-| Object_List                        | Required | Analog Input #1, Analog Input #2, ...            |
-| Max_APDU_Length_Supported          | Required | 50 (bytes or characters)                         |
-| Segmentation_Supported             | Required | No                                               |
-| VT_Classes_Supported               | Optional | n/a                                              |
-| Active_VT_Sessions                 | Optional | n/a                                              |
-| Local_Time                         | Optional | 12:30:15.22                                      |
-| Local_Date                         | Optional | Tuesday, March 12, 1996                          |
-| UTC_Offset                         | Optional | +480 (minutes from GMT/UTM)                      |
-| Daylight_Savings_Status            | Optional | False (not in effect)                            |
-| APDU_Segment_Timeout               | Optional | n/a                                              |
-| APDU_Timeout                       | Required | 3000 milliseconds                                |
-| Number_Of_APDU_Retries             | Required | 0                                                |
-| List_Of_Session_Keys               | Optional | n/a                                              |
-| Time_Synchronization_Recipients    | Optional | n/a                                              |
-| Max_Master                         | Optional | n/a                                              |
-| Max_Info_Frames                    | Optional | n/a                                              |
-| Device_Address_Binding             | Required | None                                             |
+| PROPERTY                          | BACnet   | EXAMPLE                                          |
+| --------------------------------- | -------- | ------------------------------------------------ |
+| `Object_Identifier`               | Required | Device #1076                                     |
+| `Object_Name`                     | Required | "Office 36 DD Control"                           |
+| `Object_Type`                     | Required | Device                                           |
+| `System_Status`                   | Required | Operational (plus others)                        |
+| `Vendor_Name`                     | Required | "Alerton Technologies, Inc."                     |
+| `Vendor_Identifier`               | Required | Alerton                                          |
+| `Model_Name`                      | Required | "VAV-DD Controller"                              |
+| `Firmware_Revision`               | Required | "1.0"                                            |
+| `Application_Software_Version`    | Required | "Dual-Duct DDC"                                  |
+| `Location`                        | Optional | "Office 36, Floor 3"                             |
+| `Description`                     | Optional | "(on network 5)"                                 |
+| `Protocol_Version`                | Required | 1 (BACnet protocol version)                      |
+| `Protocol_Conformance_Class`      | Required | 2                                                |
+| `Protocol_Services_Supported`     | Required | readProperty, writeProperty, atomicWriteFile,... |
+| `Protocol_Object_Types_Supported` | Required | Analog Input, Analog Output,...                  |
+| `Object_List`                     | Required | Analog Input #1, Analog Input #2, ...            |
+| `Max_APDU_Length_Supported`       | Required | 50 (bytes or characters)                         |
+| `Segmentation_Supported`          | Required | No                                               |
+| `VT_Classes_Supported`            | Optional | n/a                                              |
+| `Active_VT_Sessions`              | Optional | n/a                                              |
+| `Local_Time`                      | Optional | 12:30:15.22                                      |
+| `Local_Date`                      | Optional | Tuesday, March 12, 1996                          |
+| `UTC_Offset`                      | Optional | +480 (minutes from GMT/UTM)                      |
+| `Daylight_Savings_Status`         | Optional | False (not in effect)                            |
+| `APDU_Segment_Timeout`            | Optional | n/a                                              |
+| `APDU_Timeout`                    | Required | 3000 milliseconds                                |
+| `Number_Of_APDU_Retries`          | Required | 0                                                |
+| `List_Of_Session_Keys`            | Optional | n/a                                              |
+| `Time_Synchronization_Recipients` | Optional | n/a                                              |
+| `Max_Master`                      | Optional | n/a                                              |
+| `Max_Info_Frames`                 | Optional | n/a                                              |
+| `Device_Address_Binding`          | Required | None                                             |
