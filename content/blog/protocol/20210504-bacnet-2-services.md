@@ -11,7 +11,7 @@ draft: false
 > 본 포스트는 [The Language of BACnet-Objects, Properties and Services](http://www.bacnet.org/Bibliography/ES-7-96/ES-7-96.htm)를 번역한 글입니다.
 > 저자의 의도와 다소 다를 수 있습니다.
 
-> 이 글은 [(번역) BACnet - 객체, 속성 및 서비스의 언어(1)](#)에서 이어집니다.
+> 이 글은 [(번역) BACnet - 객체, 속성 및 서비스의 언어(1)](https://www.cckn.dev/protocol/20210504-bacnet-1-overview%20and%20properties/)에서 이어집니다.
 
 ## Services
 

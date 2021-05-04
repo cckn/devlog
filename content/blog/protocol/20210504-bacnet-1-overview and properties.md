@@ -11,6 +11,8 @@ draft: false
 > 본 포스트는 [The Language of BACnet-Objects, Properties and Services](http://www.bacnet.org/Bibliography/ES-7-96/ES-7-96.htm)를 번역한 글입니다.
 > 저자의 의도와 다소 다를 수 있습니다.
 
+> 이 글은 [(번역) BACnet - 객체, 속성 및 서비스의 언어(2)](https://www.cckn.dev/protocol/20210504-bacnet-2-services/)로 이어집니다.
+
 ## BACnet이란?
 
 BACnet™(Building Automation and Control Network)은 ASHRAE가 개발한 개방형 데이터 통신 프로토콜입니다.
@@ -194,5 +196,3 @@ BACnet은 모든 BACnet 장치에 하나의 장치 개체가 있어야합니다.
 | Max_Master                      | Optional | n/a                                              |
 | Max_Info_Frames                 | Optional | n/a                                              |
 | Device_Address_Binding          | Required | None                                             |
-
-> 이 글은 [(번역) BACnet - 객체, 속성 및 서비스의 언어(2)](#)로 이어집니다.
