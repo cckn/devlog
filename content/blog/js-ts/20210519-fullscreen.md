@@ -118,9 +118,7 @@ function toggleFullScreen(element) {
 
 <https://codepen.io/cckn/pen/zYZNrWr>
 
-<script async src="//jsfiddle.net/cckn_dev/d62c3g81/1/embed/"></script>
-
-##### index.html
+### index.html
 
 ```html
 <!DOCTYPE html>
@@ -143,7 +141,7 @@ function toggleFullScreen(element) {
 </html>
 ```
 
-##### index.css
+### index.css
 
 ```css
 .container {
@@ -155,7 +153,7 @@ function toggleFullScreen(element) {
 }
 ```
 
-##### index.js
+### index.js
 
 ```js
 const enterFullscreenBtn = document.querySelector('.enterFullscreenBtn')
