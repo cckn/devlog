@@ -6,6 +6,8 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
+> 이 글의 전체 예제는 [링크](https://codepen.io/cckn/pen/zYZNrWr)에서 확인할 수 있습니다.
+
 브라우저에서 DOM 요소를 전체화면으로 표시하려면 `requestFullscreen` 기능을 사용하면 됩니다.
 
 다만 브라우저별로 다른 메서드를 사용하기 때문에 각각의 메서드를 지정해주어야 정상적으로 동작할 수 있습니다.
@@ -114,7 +116,7 @@ function toggleFullScreen(element) {
 
 ## 전체 소스코드
 
-<https://jsfiddle.net/cckn_dev/d62c3g81/1/>
+<https://codepen.io/cckn/pen/zYZNrWr>
 
 <script async src="//jsfiddle.net/cckn_dev/d62c3g81/1/embed/"></script>
 
