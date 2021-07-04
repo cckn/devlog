@@ -2,9 +2,8 @@ module.exports = {
   title: `cckn's Devlog`,
   description: `발자국을 기록합니다.`,
   author: `cckn.dev`,
-  introduction: `생산성과 데이터에 관심이 많습니다. 
-  뭐든 계속 도전하면 배울 수 있다고 생각합니다. 
-  어려운 게 아니라 아직은 익숙하지 않은 것이라고 생각합니다.`,
+  introduction: `직방 IoT 서비스 개발자
+  생산성과 데이터에 관심이 많습니다. `,
   siteUrl: `https://cckn.dev`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
