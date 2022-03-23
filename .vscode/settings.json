@@ -19,5 +19,6 @@
     "SECURITY.md": true,
     ".vscode": true
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "typewriterAutoScroll.enable": false
 }
