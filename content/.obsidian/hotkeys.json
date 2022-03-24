@@ -19,12 +19,20 @@
   "zk-prefixer": [
     {
       "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "file-explorer:new-file": [
+    {
+      "modifiers": [
         "Mod"
       ],
       "key": "N"
     }
   ],
-  "file-explorer:new-file": [],
   "editor:swap-line-down": [
     {
       "modifiers": [
@@ -40,5 +48,6 @@
       ],
       "key": "ArrowUp"
     }
-  ]
+  ],
+  "file-explorer:new-file-in-new-pane": []
 }
