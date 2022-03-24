@@ -4,52 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "b2f6f34545fca654",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "객체는 다른 객체들과 협력할 수 있어야 한다..md",
-            "mode": "source"
+        "id": "052ed56e1aa1b5ad",
+        "type": "split",
+        "children": [
+          {
+            "id": "b2f6f34545fca654",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "zk/2/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md",
+                "mode": "source"
+              }
+            },
+            "group": "3bf83caebf67a76d"
+          },
+          {
+            "id": "07978866bba29311",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "zk/2/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              }
+            },
+            "group": "3bf83caebf67a76d"
           }
-        },
-        "group": "3bf83caebf67a76d"
-      },
-      {
-        "id": "07978866bba29311",
-        "type": "leaf",
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "객체는 다른 객체들과 협력할 수 있어야 한다..md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 1,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": false,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": false,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": true,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 10,
-              "linkStrength": 1,
-              "linkDistance": 250,
-              "scale": 1,
-              "close": false
-            }
-          }
-        },
-        "group": "3bf83caebf67a76d"
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -89,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 501
   },
   "right": {
     "id": "476f2d1ce5154bde",
@@ -105,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "객체는 다른 객체들과 협력할 수 있어야 한다..md",
+                "file": "zk/2/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,19 +127,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "b2f6f34545fca654",
   "lastOpenFiles": [
-    "객체는 다른 객체들과 협력할 수 있어야 한다..md",
-    "zk/상태를-이용하면-객체의-행동-결과를-쉽게-예측하고-설명할-수-있다-.md",
-    "zk/객체지향의-사실과-오해.md",
-    "zk/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md",
+    "zk/2/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md",
+    "zk/kewords/Keyword - 객체.md",
+    "zk/객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
+    "zk/객체는-인간이-인지할-수-있는-경계를-지닌-어떤-단위이다-.md",
+    "zk/객체는-혼자-존재해서는-의미가-없다-.md",
+    "zk/객체의-인터페이스는-대부분-조회(쿼리)와-명령으로-구성된다-.md",
+    "zk/객체의-자율성을-높이기-위해서는-캡슐화가-필요하다-.md",
     "zk/객체의-행동을-먼저-정의해야한다--상태를-먼저-정의하는-것은-나쁜-설계를-가져온다-.md",
     "zk/객체지향에서-클래스는-단지-도구일-뿐이다--객체의-역할,-책임,-협력에-집중하라.md",
-    "zk/객체의-자율성을-높이기-위해서는-캡슐화가-필요하다-.md",
-    "zk/객체는-혼자-존재해서는-의미가-없다-.md",
-    "zk/객체는-인간이-인지할-수-있는-경계를-지닌-어떤-단위이다-.md",
-    "zk/객체가-자율적일-수록-객체의-협력이-유연해진다-.md"
+    "zk/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md"
   ]
 }
