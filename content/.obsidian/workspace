@@ -4,28 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "052ed56e1aa1b5ad",
+        "id": "a9b2d9467569ccce",
         "type": "split",
         "children": [
           {
-            "id": "b2f6f34545fca654",
+            "id": "023076f17b280f8c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zk/2/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md",
-                "mode": "source"
+                "file": "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
               }
             },
-            "group": "3bf83caebf67a76d"
+            "group": "ae446a7711af3d0b"
           },
           {
-            "id": "07978866bba29311",
+            "id": "87ed6a3f401a2790",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zk/2/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md",
+                "file": "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -48,15 +50,15 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 2.2806163145101945,
                   "close": false
                 }
               }
             },
-            "group": "3bf83caebf67a76d"
+            "group": "ae446a7711af3d0b"
           }
         ],
-        "direction": "horizontal"
+        "direction": "vertical"
       }
     ],
     "direction": "vertical"
@@ -91,12 +93,20 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "fbccfc51a4db6889",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 501
+    "width": 618
   },
   "right": {
     "id": "476f2d1ce5154bde",
@@ -112,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zk/2/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md",
+                "file": "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,6 +132,26 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "13509da4940c751a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "78cbe2ad6eece645",
+            "type": "leaf",
+            "state": {
+              "type": "Saved Queries View",
+              "state": {}
+            }
           }
         ]
       }
@@ -130,17 +160,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b2f6f34545fca654",
+  "active": "023076f17b280f8c",
   "lastOpenFiles": [
-    "zk/2/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md",
-    "zk/kewords/Keyword - 객체.md",
-    "zk/객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
-    "zk/객체는-인간이-인지할-수-있는-경계를-지닌-어떤-단위이다-.md",
-    "zk/객체는-혼자-존재해서는-의미가-없다-.md",
-    "zk/객체의-인터페이스는-대부분-조회(쿼리)와-명령으로-구성된다-.md",
-    "zk/객체의-자율성을-높이기-위해서는-캡슐화가-필요하다-.md",
-    "zk/객체의-행동을-먼저-정의해야한다--상태를-먼저-정의하는-것은-나쁜-설계를-가져온다-.md",
-    "zk/객체지향에서-클래스는-단지-도구일-뿐이다--객체의-역할,-책임,-협력에-집중하라.md",
-    "zk/객체지향은-실제-세계를-그대로-표현하는-것이-아니다-.md"
+    "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
+    "zk/2/202203250122 객체는 다른 객체들과 협력할 수 있어야 한다.md",
+    "zk/2/202203250122 개념은 다양한 사물을 공통점으로 묶을 수 있는 정의를 의미한다.md",
+    "zk/2/202203250122 객체가 자율적일수록 객체의 협력이 유연해진다-.md",
+    "zk/2/202203250122 객체가 다른 객체들과 잘 협력할 수 있는지 결정하는 것은 행동이다.md",
+    "zk/2/202203250122 객체는-인간이-인지할-수-있는-경계를-지닌-어떤-단위이다-.md",
+    "zk/2/202203250122 객체는-특정한-개념을-적용할-수-있는-구체적인-사물을-의미한다-.md",
+    "zk/2/202203250122 객체의 인터페이스는 객체가 수신할 수 있는 메세지의 목록으로 구성된다.md",
+    "zk/2/202203250122 객체는-혼자-존재해서는-의미가-없다-.md",
+    "zk/2/202203250122 객체의-공용-인터페이스는-책임으로-이루어진다-.md"
   ]
 }
