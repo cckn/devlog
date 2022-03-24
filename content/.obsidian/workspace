@@ -4,61 +4,54 @@
     "type": "split",
     "children": [
       {
-        "id": "a9b2d9467569ccce",
-        "type": "split",
-        "children": [
-          {
-            "id": "023076f17b280f8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            },
-            "group": "ae446a7711af3d0b"
-          },
-          {
-            "id": "87ed6a3f401a2790",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 2.2806163145101945,
-                  "close": false
-                }
-              }
-            },
-            "group": "ae446a7711af3d0b"
+        "id": "87ed6a3f401a2790",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zk/2/202203250219 객체의 상태는 객체의 복잡성을 완화시키는 역할을 한다..md",
+            "mode": "source",
+            "backlinks": true,
+            "source": true
           }
-        ],
-        "direction": "vertical"
+        },
+        "group": "76a71af391b89754"
+      },
+      {
+        "id": "77e1c54422979547",
+        "type": "leaf",
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "zk/2/202203250219 객체의 상태는 객체의 복잡성을 완화시키는 역할을 한다..md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 1,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": false,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": true,
+              "textFadeMultiplier": -3,
+              "nodeSizeMultiplier": 1.85177617521368,
+              "lineSizeMultiplier": 5,
+              "collapse-forces": false,
+              "centerStrength": 0,
+              "repelStrength": 20,
+              "linkStrength": 1,
+              "linkDistance": 428,
+              "scale": 0.9966268260763761,
+              "close": true
+            }
+          }
+        },
+        "group": "76a71af391b89754"
       }
     ],
     "direction": "vertical"
@@ -122,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
+                "file": "zk/2/202203250219 객체의 상태는 객체의 복잡성을 완화시키는 역할을 한다..md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
+                "file": "zk/2/202203250219 객체의 상태는 객체의 복잡성을 완화시키는 역할을 한다..md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,17 +153,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "023076f17b280f8c",
+  "active": "87ed6a3f401a2790",
   "lastOpenFiles": [
-    "zk/2/202203250122 객체는-스스로-자신의-상태를-관리하는-자율적인-존재여야-한다-.md",
-    "zk/2/202203250122 객체는 다른 객체들과 협력할 수 있어야 한다.md",
-    "zk/2/202203250122 개념은 다양한 사물을 공통점으로 묶을 수 있는 정의를 의미한다.md",
-    "zk/2/202203250122 객체가 자율적일수록 객체의 협력이 유연해진다-.md",
-    "zk/2/202203250122 객체가 다른 객체들과 잘 협력할 수 있는지 결정하는 것은 행동이다.md",
-    "zk/2/202203250122 객체는-인간이-인지할-수-있는-경계를-지닌-어떤-단위이다-.md",
-    "zk/2/202203250122 객체는-특정한-개념을-적용할-수-있는-구체적인-사물을-의미한다-.md",
+    "zk/2/202203250219 객체의 상태는 객체의 복잡성을 완화시키는 역할을 한다..md",
+    "zk/1/상태를-이용하면-객체의-행동-결과를-쉽게-예측하고-설명할-수-있다-.md",
+    "zk/1/상태는-행동의-부수적인-것이다-.md",
+    "zk/1/202203250212.md",
+    "zk/1/객체지향의-객체는-현실과는-다르게-능동적인-존재다-(의인화).md",
+    "zk/1/객체의-타입을-결정하는-것은-행동이다-.md",
     "zk/2/202203250122 객체의 인터페이스는 객체가 수신할 수 있는 메세지의 목록으로 구성된다.md",
     "zk/2/202203250122 객체는-혼자-존재해서는-의미가-없다-.md",
-    "zk/2/202203250122 객체의-공용-인터페이스는-책임으로-이루어진다-.md"
+    "zk/2/202203250122 객체는-특정한-개념을-적용할-수-있는-구체적인-사물을-의미한다-.md",
+    "zk/2/202203250122 객체는-인간이-인지할-수-있는-경계를-지닌-어떤-단위이다-.md"
   ]
 }
