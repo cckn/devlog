@@ -9,49 +9,12 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zk/2/202203250840 객체의 행동을 먼저 정의해야한다. 객체의 상태를 먼저 정의하는 것은 안티패턴이다..md",
+            "file": "zk/0/20220325.md",
             "mode": "source",
             "backlinks": true,
             "source": true
           }
-        },
-        "group": "76a71af391b89754"
-      },
-      {
-        "id": "77e1c54422979547",
-        "type": "leaf",
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "zk/2/202203250840 객체의 행동을 먼저 정의해야한다. 객체의 상태를 먼저 정의하는 것은 안티패턴이다..md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 1,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": false,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": false,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": true,
-              "textFadeMultiplier": -3,
-              "nodeSizeMultiplier": 1.85177617521368,
-              "lineSizeMultiplier": 5,
-              "collapse-forces": false,
-              "centerStrength": 0,
-              "repelStrength": 20,
-              "linkStrength": 1,
-              "linkDistance": 428,
-              "scale": 0.9966268260763761,
-              "close": true
-            }
-          }
-        },
-        "group": "76a71af391b89754"
+        }
       }
     ],
     "direction": "vertical"
@@ -99,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 614
+    "width": 334
   },
   "right": {
     "id": "476f2d1ce5154bde",
@@ -115,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zk/2/202203250840 객체의 행동을 먼저 정의해야한다. 객체의 상태를 먼저 정의하는 것은 안티패턴이다..md",
+                "file": "zk/0/20220325.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zk/2/202203250840 객체의 행동을 먼저 정의해야한다. 객체의 상태를 먼저 정의하는 것은 안티패턴이다..md",
+                "file": "zk/0/20220325.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,19 +125,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "87ed6a3f401a2790",
   "lastOpenFiles": [
-    "zk/2/202203250840 객체의 행동을 먼저 정의해야한다. 객체의 상태를 먼저 정의하는 것은 안티패턴이다..md",
-    "zk/0/안티패턴이란 실제 많이 사용되는 패턴이지만 비효율적이거나 비생산적인 패턴을 의미한다.md",
-    "zk/0/객체지향 설계는 앱에 필요한 협력을 생각하고 협력에 참여하는 데 필요한 행동을 생각한 후 행동을 수행할 객체를 선택하는 방식으로 수행된다..md",
-    "zk/1/202203250212.md",
-    "zk/0/Untitled 1.md",
-    "zk/1/객체의-행동을-먼저-정의해야한다--상태를-먼저-정의하는-것은-나쁜-설계를-가져온다-.md",
-    "zk/2/202203250835 객체지향이란 시스템을 자율적으로 협력하는 작은 객체들로 분할하는 방법이다..md",
+    "zk/0/20220325.md",
+    "zk/0/종원님 CCTV 논의.md",
+    "zk/0/클라우드 프론트 CDK 적용.md",
     "zk/0/객체지향의-사실과-오해.md",
-    "zk/0/Untitled.md",
-    "zk/1/객체지향의-객체는-현실과는-다르게-능동적인-존재다-(의인화).md"
+    "zk/2/202203251041-책임-주도 설계의 절차는 전체의 책임을 분할하고 부여하는 것이다..md",
+    "zk/2/202203251043-책임-주도 설계는 협조적이고 성실한 객체들로 구성된 객체지향 시스템을 설계하는 방법이다..md",
+    "zk/2/202203251439-효과적으로 일하기 위해서는 지식의 기록, 관리, 공유가 중요하다.md",
+    "zk/1/객체지향에서-클래스는-단지-도구일-뿐이다--객체의-역할,-책임,-협력에-집중하라.md",
+    "zk/1/202203251422-.md",
+    "zk/1/202203251027.md"
   ]
 }
