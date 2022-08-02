@@ -76,10 +76,10 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: metaConfig.ga,
-        head: false, // head에 tracking script를 넣고 싶다면 true로 변경
+        head: false,
         anonymize: true,
       },
     },
