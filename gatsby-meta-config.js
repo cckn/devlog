@@ -1,6 +1,6 @@
 module.exports = {
   title: `cckn's Devlog`,
-  description: `발자국을 기록합니다.`,
+  description: `읽고, 쓰고, 개발합니다.`,
   author: `cckn.dev`,
   introduction: `직방 IoT 서비스 개발자
   생산성과 데이터에 관심이 많습니다. `,
@@ -11,6 +11,7 @@ module.exports = {
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
+    instagram: ``, // Your Instagram account
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`],
@@ -28,4 +29,5 @@ module.exports = {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
   ga: 'G-TPKMPB9RE7', // Add your google analytics tranking ID
+  ad: '', // Add your google adsense publisherId `ca-pub-xxxxxxxxxx`
 }
