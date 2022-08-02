@@ -6,6 +6,8 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
+# node.js-16-available-now
+
 > 이 글은 [Node.js 16 available now](https://nodejs.medium.com/node-js-16-available-now-7f5099a97e70)를 번역한 글입니다.
 > 원 글의 의도와 다소 차이가 있을 수 있습니다.
 
@@ -51,10 +53,10 @@ V8의 새 기능 및 업데이트에 대한 자세한 내용은 [V8 블로그](h
 Timers Promises API는 Promise 객체를 반환하는 대체 타이머 함수 세트를 제공하므로 `util.promisify()`를 사용할 필요가 없습니다.
 
 ```js
-import { setTimeout } from 'timers/promises'
+import { setTimeout } from "timers/promises"
 async function run() {
-  await setTimeout(5000)
-  console.log('Hello, World!')
+	await setTimeout(5000)
+	console.log("Hello, World!")
 }
 run()
 ```
@@ -69,12 +71,12 @@ Node.js v15.0.0에 [James Snell](https://github.com/nodejs/node/pull/33950)이 �
 
 Node.js 16에서도 사용할 수 있는 Node.js 15에서 최근에 출시된 기능 중 일부는 다음과 같습니다.
 
-- 표준 [Web Crypto API](https://www.w3.org/TR/WebCryptoAPI/)의 실험적 구현
-- npm 7 (v7.10.0 in Node.js v16.0.0)
-- Node-API version 8
-- [AbortController Web API](https://developer.mozilla.org/en-US/docs/Web/API/AbortController)에 기반한 안정적인 `AbortController` 구현
-- Stable Source Maps v3
-- 레거시 웹 플랫폼 API와의 호환성을위한 웹 플랫폼 atob(`buffer.atob(data)`) 및 btoa(`buffer.btoa(data)`) 구현
+-   표준 [Web Crypto API](https://www.w3.org/TR/WebCryptoAPI/)의 실험적 구현
+-   npm 7 (v7.10.0 in Node.js v16.0.0)
+-   Node-API version 8
+-   [AbortController Web API](https://developer.mozilla.org/en-US/docs/Web/API/AbortController)에 기반한 안정적인 `AbortController` 구현
+-   Stable Source Maps v3
+-   레거시 웹 플랫폼 API와의 호환성을위한 웹 플랫폼 atob(`buffer.atob(data)`) 및 btoa(`buffer.btoa(data)`) 구현
 
 ## 새로운 컴파일러 및 platform minimums
 
