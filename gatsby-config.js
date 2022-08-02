@@ -76,10 +76,10 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `G-TPKMPB9RE7`, // 측정 ID
-        head: false, // head에 tracking script를 넣고 싶다면 true로 변경
+        head: true, // head에 tracking script를 넣고 싶다면 true로 변경
         anonymize: true,
       },
     },
