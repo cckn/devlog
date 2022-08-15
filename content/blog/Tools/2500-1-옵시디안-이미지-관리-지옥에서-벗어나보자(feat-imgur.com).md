@@ -86,5 +86,5 @@ imgur.com에 가입된 계정을 이용해 업로드 한다. 플러그인을 통
 
 # 참조
 
-[GitHub - gavvvr/obsidian-imgur-plugin: Pastes images right to imgur.com](https://github.com/gavvvr/obsidian-imgur-plugin)
-[Imgur: The magic of the Internet](https://imgur.com)
+- [GitHub - gavvvr/obsidian-imgur-plugin: Pastes images right to imgur.com](https://github.com/gavvvr/obsidian-imgur-plugin)
+- [Imgur: The magic of the Internet](https://imgur.com)
