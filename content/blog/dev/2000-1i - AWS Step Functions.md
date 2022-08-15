@@ -8,9 +8,13 @@ draft: false
 
 # WHAT : AWS Step Functions는 무엇인가요?
 
+![](https://raw.githubusercontent.com/cckn/picgo/picgo/20220815231908.png?token=AEVDZPWPP4JESIFWWKDIP4DC7JLBW)
+
 AWS Step Functions는 시각화된 워크플로를 통해 분산 애플리케이션 및 마이크로 서비스 컴포넌트의 관리를 돕는 완전 관리형 서비스
 
 기존의 SWF(Amazon Simple Workflow)를 대체하는 용도로 만들어짐
+
+![](https://raw.githubusercontent.com/cckn/picgo/picgo/20220815231926.png?token=AEVDZPXSK7AN6V35PF2TCITC7JLC6)
 
 ## 용어 정의
 
@@ -105,6 +109,8 @@ Amazon States 언어는 state machine을 정의하는 데 사용되는 구조화
 
 ### Function orchestration
 
+![](https://raw.githubusercontent.com/cckn/picgo/picgo/20220815231938.png?token=AEVDZPWY5GHZZ6IIKYLG6A3C7JLDU)
+
 - 특정 순서로 Lambda를 실행하는 워크플로 생성
   - 이전 Step의 Lambda Output은 다음 Lambda 함수의 Input으로 전달
   - 마지막 상태의 Output은 워크플로의 결과로 사용됨
@@ -117,11 +123,11 @@ Amazon States 언어는 state machine을 정의하는 데 사용되는 구조화
   - step-functions은 적절한 일시정지된 task를 찾아서 결과를 전달
   - task는 결과를 이용해 작업을 재개
 
-![[Pasted image 20220805113805.png]]
+![](https://raw.githubusercontent.com/cckn/picgo/picgo/20220815231949.png?token=AEVDZPSUAE573HIGE7UCOLDC7JLEI)
 
 - 아래 예시는 Step-functions과 API Gateway, SES를 이용해 이메일을 이용한 승인/거절 시스템을 구성한 예시
 
-![[Pasted image 20220812000320.png]]
+![](https://raw.githubusercontent.com/cckn/picgo/picgo/20220815231955.png?token=AEVDZPSF7TI2Y3VUD4ZAQQ3C7JLEY)
 
 # How : AWS Step Functions는 어떻게 사용하나요?
 
@@ -251,7 +257,7 @@ Standard Workflow에서 사용할 수 있는 Task의 타입은 아래 3가지
   - 스탠더드 워크플로는 장기 실행 워크로드를 관리하는 데 사용
   - 익스프레스 워크플로는 대용량 이벤트 처리 워크로드를 지원 (IoT 등)
 
-![[Pasted image 20220812000714.png]]
+![](https://raw.githubusercontent.com/cckn/picgo/picgo/20220815232010.png?token=AEVDZPRIMCOIRCXPEDMX3LDC7JLFU)
 
 ### Standard workflow
 
