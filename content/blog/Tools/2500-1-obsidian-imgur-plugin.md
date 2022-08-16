@@ -1,5 +1,5 @@
 ---
-title: 옵시디언 이미지 관리 지옥에서 벗어나보자(feat imgur.com)
+title: 옵시디언 이미지 관리 지옥에서 벗어나보자(feat. imgur-plugin)
 date: 2022-08-16 00:08:88
 category: tools
 thumbnail: { thumbnailSrc }
