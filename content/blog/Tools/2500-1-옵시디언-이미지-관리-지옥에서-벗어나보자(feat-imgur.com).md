@@ -1,5 +1,5 @@
 ---
-title: 옵시디안 이미지 관리 지옥에서 벗어나보자(feat imgur.com)
+title: 옵시디언 이미지 관리 지옥에서 벗어나보자(feat imgur.com)
 date: 2022-08-16 00:08:88
 category: tools
 thumbnail: { thumbnailSrc }
@@ -8,7 +8,7 @@ draft: false
 
 ![asd|200](https://i.imgur.com/AiTDizj.png)
 
-옵시디안은 노트에 올린 이미지를 vault 내부의 로컬 파일로 저장한다. 해당 파일들의 위치나 format은 설정에서 관리 가능하다.
+옵시디언은 노트에 올린 이미지를 vault 내부의 로컬 파일로 저장한다. 해당 파일들의 위치나 format은 설정에서 관리 가능하다.
 
 이러한 옵시디언의 이미지 관리 방식은 몇 가지 단점이 있다.
 
