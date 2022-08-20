@@ -1,6 +1,6 @@
 ---
 title: nodemailer로 Gmail 보내기(+ 보안문제 해결)
-date: 2022-08-20 21:08:63
+date: 2022-08-20 21:08:10
 category: dev
 thumbnail: { thumbnailSrc }
 draft: false
@@ -103,3 +103,7 @@ const sendMail = async () => {
 ## 완료!
 
 ![](https://i.imgur.com/sxSi7RH.png)
+
+## 참조
+
+- [4.3. 유저 서비스에 회원가입 로직 구현하기 - NestJS로 배우는 백엔드 프로그래밍](https://wikidocs.net/158501)
