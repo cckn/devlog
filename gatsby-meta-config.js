@@ -1,7 +1,7 @@
 module.exports = {
   title: `cckn's Devlog`,
   description: `읽고, 쓰고, 개발합니다.`,
-  author: `cckn.dev`,
+  author: `박대성`,
   introduction: `IoT 백엔드 개발자
   생산성과 지식관리에 관심이 많습니다. `,
   siteUrl: `https://cckn.dev`, // Your blog site url
