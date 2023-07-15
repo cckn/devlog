@@ -1,5 +1,5 @@
 ---
-title: NextJS Local에서 Prod로 띄우는 방법
+title: Local에서 NextJS Prod로 실행하는 방법
 date: 2021-07-16 08:22:41
 category: dev
 thumbnail: { thumbnailSrc }
