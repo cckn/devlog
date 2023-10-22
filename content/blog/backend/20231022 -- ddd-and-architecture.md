@@ -130,9 +130,3 @@ draft: false
   - 클린 아키텍처로 시작하면 생각보다 레퍼런스가 적어 고생할 수 있음. 
   - 헥사고날 아키텍처는 쉽게 시작할 수 있는 실습 자료들이 많음. 
 
-
-
-
-# 참조 
-- 도서 - 도메인 주도 설계 철저 입문 
-- [[NHN FORWARD 22] 클린 아키텍처 애매한 부분 정해 드립니다. - YouTube](https://www.youtube.com/watch?v=g6Tg6_qpIVc&ab_channel=NHNCloud)
