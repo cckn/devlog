@@ -23,5 +23,7 @@ AWS의 문서에 따르면 GSI는 기본 테이블과 무관하게 사용 가능
 - 기본 테이블의 기본키가 단일키여도 GSI는 복합키로 사용 가능! 
 - 그 반대도 가능! 
 
+GSI는 기본 테이블과 `별도`의 인덱스를 생성하는 것이기 때문에 기본 테이블의 기본키와 GSI의 기본키는 무관하다. 
+
 ## 참조 
 - [DynamoDB에서 글로벌 보조 인덱스 사용 - Amazon DynamoDB](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/GSI.html)
