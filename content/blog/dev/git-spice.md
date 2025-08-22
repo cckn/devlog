@@ -1,7 +1,7 @@
 ---
 title: "git spice와 Stacked Diff 워크플로우"
 date: 2025-06-22
-draft: true
+draft: false
 tags: ["git", "workflow", "productivity", "code-review"]
 ---
 
