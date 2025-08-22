@@ -6,15 +6,15 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-작업을 하다 보면 작은 단위의 PR과 작업 속도 간의 균형을 맞추기 쉽지 않다. 더군다나 코드리뷰가 요구되는 상황이면 더욱 그렇다.
+작은 단위의 PR과 작업 속도 간의 균형을 맞추기는 쉽지 않다. 특히 코드리뷰가 필수인 환경에서는 더욱 그렇다.
 
 ## PR 크기의 딜레마
 
-큰 PR을 만들면 리뷰어가 제대로 보기 어렵다. 2000줄짜리 PR을 받으면 대충 훑어보고 LGTM 달기 마련이다. 반대로 작은 PR들로 나누면 각각의 리뷰를 기다려야 한다. 첫 번째 PR 리뷰 기다리고, 두 번째 PR 리뷰 기다리고... 결국 개발 속도가 느려진다.
+큰 PR을 만들면 리뷰어가 제대로 보기 어렵다. 2000줄짜리 PR을 받으면 대충 훑어보고 LGTM 달기 마련이다. 반대로 작은 PR들로 나누면 각각의 리뷰를 기다려야 한다. 특히 이전 작업을 기반으로 새로운 작업을 이어나가야 한다면? 첫 번째 PR 머지를 기다리고, 두 번째 PR 머지를 기다리고... 결국 개발 속도가 느려진다.
 
-코드리뷰는 동료의 코드리뷰를 최우선으로 생각하는 문화가 자리잡아야 한다고 생각한다. 기술적인 것들보다 이런 문화가 더 중요하다. 그러나 이런 문화가 쉽지 않다. 각자 자신의 일이 바쁘기 때문이다.
+물론 코드리뷰를 최우선으로 하는 문화가 정착되면 좋겠지만, 현실적으로 쉽지 않다. 각자 자신의 일이 바쁘기 때문이다.
 
-그렇다면 이런 상황에서 어떻게 대응이 가능할까? git spice 같은 stacked diff 방식이 유용할 수 있다.
+이런 상황에서 Stacked Diff 방식이 유용할 수 있다.
 
 ## Stacked Diff란
 
@@ -22,15 +22,44 @@ Stacked Diff는 Meta(구 Facebook)에서 시작된 개발 방식이다. 큰 기�
 
 ```
 main
-  └── feat/db-schema (PR #1)
-       └── feat/auth-api (PR #2)
-            └── feat/jwt-logic (PR #3)
-                 └── feat/login-form (PR #4)
+  └── refactor/extract-validation (PR #1)
+       └── refactor/improve-error-handling (PR #2)
+            └── refactor/unify-response-format (PR #3)
+                 └── refactor/add-tests (PR #4)
 ```
 
 핵심은 PR #1의 리뷰를 기다리지 않고 PR #2, #3, #4를 계속 만들어 나갈 수 있다는 점이다. 각 PR은 이전 PR 위에 쌓이지만, 독립적으로 리뷰받을 수 있다.
 
 Meta는 이를 위해 Phabricator를 만들었고, 이후 Graphite 같은 도구들도 나왔다. 하지만 이런 도구들은 팀 전체가 도입해야 하고 설정도 복잡하다.
+
+## Git만으로도 가능하지만...
+
+사실 git의 기본 기능만으로도 stacked diff는 가능하다:
+
+```bash
+# 첫 번째 작업
+git checkout -b feature-1
+# ... 작업 ...
+git push origin feature-1
+
+# 두 번째 작업 (feature-1 기반)
+git checkout -b feature-2
+# ... 작업 ...
+git push origin feature-2
+
+# feature-1이 수정되면 feature-2 리베이스
+git checkout feature-2
+git rebase feature-1
+git push --force-with-lease origin feature-2
+```
+
+하지만 브랜치가 많아질수록 관리가 복잡해진다:
+- 각 브랜치의 의존 관계를 기억해야 함
+- 하나씩 수동으로 리베이스해야 함
+- 충돌 발생시 여러 번 해결해야 함
+- PR 설명에 의존 관계를 명시해야 함
+
+git spice나 Graphite 같은 도구들은 이런 번거로운 과정을 자동화하고 추상화한 것이다.
 
 ## git spice 소개
 
@@ -54,20 +83,41 @@ chmod +x /usr/local/bin/git-spice
 alias spice='git-spice'
 ```
 
-## 기본 사용법
+## 실제 예시: API 리팩토링
 
-인증 기능을 구현한다고 가정해보자. DB 스키마, API, JWT 로직, 프론트엔드를 순서대로 작업한다.
+레거시 사용자 API를 리팩토링하는 상황을 생각해보자. `/users` 엔드포인트가 300줄짜리 거대한 함수 하나로 되어 있다.
 
-### 첫 번째 브랜치 생성
+### 일반적인 접근: 독립 브랜치
+
+보통은 독립적인 브랜치로 작업한다:
+
+```
+main
+  ├── refactor/extract-validation     # controllers/users.js 수정
+  ├── refactor/improve-error-handling  # controllers/users.js 수정 (충돌!)
+  ├── refactor/unify-response-format   # controllers/users.js 수정 (충돌!)
+  └── refactor/add-tests              # controllers/users.js 수정 (충돌!)
+```
+
+같은 파일을 여러 PR에서 수정하면:
+- 첫 번째 PR이 머지되면 나머지 모든 PR에서 충돌
+- 충돌 해결하고 push하면 또 다른 PR이 머지되어 또 충돌
+- 결국 "이거 그냥 하나로 합칠까요?" 하게 됨
+
+## git spice로 해결하기
+
+### 첫 번째 브랜치: 입력 검증 분리
 
 ```bash
 # 브랜치 생성
-gs branch create feat/db-schema
+gs branch create refactor/extract-validation
 
-# 작업
-echo "CREATE TABLE users (...);" > schema.sql
-git add schema.sql
-git commit -m "feat: add users table schema"
+# 입력 검증 로직을 별도 파일로 분리
+vim validators/userValidator.js  # 새 파일 생성
+vim controllers/users.js         # 기존 검증 코드 제거 및 import
+
+git add .
+git commit -m "refactor: extract user input validation to separate module"
 
 # PR 생성
 gs branch submit
@@ -79,20 +129,24 @@ gs branch submit
 
 ```bash
 # 두 번째 브랜치 (첫 번째 브랜치 위에 생성)
-gs branch create feat/auth-api
+gs branch create refactor/improve-error-handling
 
-# API 구현
-vim controllers/auth.go
+# 에러 처리 개선 - 같은 파일을 또 수정
+vim controllers/users.js  # try-catch 추가, 에러 응답 통일
+vim errors/ApiError.js    # 커스텀 에러 클래스
+
 git add .
-git commit -m "feat: implement auth endpoints"
+git commit -m "refactor: improve error handling with custom error classes"
 
 # 세 번째 브랜치
-gs branch create feat/jwt-logic
+gs branch create refactor/unify-response-format
 
-# JWT 로직 구현
-vim middleware/jwt.go
+# 응답 포맷 통일 - 또 같은 파일 수정
+vim controllers/users.js         # 모든 응답을 표준 포맷으로
+vim utils/responseFormatter.js   # 응답 포맷터 유틸
+
 git add .
-git commit -m "feat: add JWT handling"
+git commit -m "refactor: unify API response format"
 ```
 
 ### 전체 스택 제출
@@ -107,14 +161,15 @@ gs stack submit
 
 ### 리뷰 피드백 반영
 
-첫 번째 PR에 수정 요청이 들어왔다면:
+첫 번째 PR(검증 로직 분리)에 수정 요청이 들어왔다면:
 
 ```bash
 # 첫 번째 브랜치로 이동
-gs branch checkout feat/db-schema
+gs branch checkout refactor/extract-validation
 
-# 수정
-vim schema.sql
+# 피드백 반영 - validator 로직 수정
+vim validators/userValidator.js
+vim controllers/users.js  # import 경로 수정
 git add .
 git commit --amend
 
@@ -126,6 +181,17 @@ gs stack submit
 ```
 
 `gs stack restack` 한 번으로 모든 상위 브랜치가 자동으로 리베이스된다. 수동으로 각 브랜치를 리베이스할 필요가 없다.
+
+### 핵심 차이점
+
+같은 파일을 네 번 수정했지만:
+- 각 PR은 작고 명확함 (한 가지 목적만)
+- 충돌 걱정 없이 계속 작업 진행
+- 첫 번째 PR 피드백 반영해도 나머지는 자동 리베이스
+- `gs stack restack` 한 번이면 끝
+
+일반 Git 워크플로우였다면 feature-2, feature-3, feature-4를 각각 수동으로 리베이스하고, 충돌을 각각 해결해야 했을 것이다.
+
 
 ## 주요 명령어
 
@@ -150,7 +216,7 @@ git commit -m "fix: critical bug"
 gs branch submit
 
 # 원래 작업으로 복귀
-gs branch checkout feat/jwt-logic
+gs branch checkout refactor/unify-response-format
 ```
 
 ### PR이 머지된 후
@@ -185,22 +251,20 @@ GitHub의 squash-merge는 커밋 해시를 변경한다. 상위 브랜치들이 
 
 ### 팀원과의 협업
 
-스택 구조를 이해하지 못한 팀원이 잘못된 순서로 머지할 수 있다. 스택의 base부터 순서대로 머지되어야 한다는 점을 공유해야 한다.
+스택 구조를 모르는 팀원이 순서를 잘못 이해할 수 있다. PR #4부터 머지하면 #1, #2, #3의 변경사항이 모두 포함된 거대한 PR이 되어버린다. 반드시 base(#1)부터 순서대로 머지해야 한다는 점을 공유해야 한다.
 
 ## 도입 전략
 
-1. 개인 프로젝트나 사이드 프로젝트에서 먼저 익숙해지기
-2. 2-3개 PR로 나눌 수 있는 작은 기능부터 적용
-3. 성공 경험을 팀원들과 공유
-4. 관심 있는 팀원들이 자연스럽게 도입
-
-강요하지 말고 장점을 보여주는 것이 중요하다.
+1. 혼자 작업하는 기능에서 먼저 시도
+2. 2-3개 PR로 시작 (너무 많으면 복잡)
+3. 성공 사례를 팀에 공유
+4. 관심 있는 동료와 함께 사용
 
 ## 마무리
 
-git spice를 사용하면 작은 PR을 유지하면서도 개발 속도를 잃지 않을 수 있다. Meta 같은 빅테크 기업들이 수년간 사용해온 검증된 워크플로우를 간단하게 도입할 수 있다는 점이 매력적이다.
+Stacked Diff는 작은 PR과 빠른 개발 속도라는 두 마리 토끼를 잡을 수 있는 방법이다. git만으로도 가능하지만 번거롭고, git spice 같은 도구를 쓰면 훨씬 편하다.
 
-완벽한 코드리뷰 문화가 정착되기를 기다리기보다는, 도구의 도움을 받아 생산성을 높이는 것도 좋은 방법이다.
+완벽한 코드리뷰 문화를 기다리기보다는, 지금 당장 생산성을 높일 수 있는 도구를 활용하는 것도 현실적인 선택이다.
 
 ## 참고
 
