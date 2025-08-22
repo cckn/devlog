@@ -1,8 +1,9 @@
 ---
-title: "git spice와 Stacked Diff 워크플로우"
-date: 2025-06-22
+title: git spice와 Stacked Diff 워크플로우
+date: 2024-06-30 10:00:00
+category: dev
+thumbnail: { thumbnailSrc }
 draft: false
-tags: ["git", "workflow", "productivity", "code-review"]
 ---
 
 작업을 하다 보면 작은 단위의 PR과 작업 속도 간의 균형을 맞추기 쉽지 않다. 더군다나 코드리뷰가 요구되는 상황이면 더욱 그렇다.

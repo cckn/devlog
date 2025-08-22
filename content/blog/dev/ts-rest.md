@@ -1,8 +1,9 @@
 ---
-title: "새로운 기술 도입의 어려움: ts-rest 실패기"
-date: 2025-08-10
+title: 새로운 기술 도입의 어려움 - ts-rest 실패기
+date: 2024-07-22 11:00:00
+category: dev
+thumbnail: { thumbnailSrc }
 draft: false
-tags: ["typescript", "api", "ts-rest", "tech-adoption", "retrospective"]
 ---
 
 새로운 기술을 도입하는 건 언제나 도박이다. 특히 팀 전체가 영향을 받는 기술이라면 더욱 그렇다. ts-rest 도입 과정에서 겪은 실패를 통해 배운 것들을 정리해본다.
